@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="UA">
+<head>
+	<title>Kredits Money</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:image" content="build/landings/img/privat-land/img_startLogoImg.png"/>
+
+
+	<link rel="manifest" href="/manifest.json">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Kredit">
+	<meta name="apple-mobile-web-app-title" content="Kredit">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+	<meta name="msapplication-TileColor" content="#73b027">
+	<meta name="msapplication-TileImage" content="/build/images/favicon/ms-icon-144x144.png">
+
+	<meta name="theme-color" content="#73b027">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/build/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/build/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/build/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/build/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/build/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/build/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/build/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/build/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/build/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/build/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/build/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/build/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/build/images/favicon/favicon-16x16.png">
+
+
+	<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js?v=1.1',{scope: './'})
+                    .then(function (registration) {
+                            // Registration was successful
+                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        },
+                        function (err) {
+                            // registration failed :(
+                            console.log('ServiceWorker registration failed: ', err);
+                        }
+                    );
+            });
+        }
+	</script>
+
+
+
+	<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<style>
+		.description-link.js-offer {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<div class="container-lend">
+	<div class="row">
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/MiloanDirectOffer-pdl-UA-1606819678.png" alt="Miloan">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green">до 12 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 97.9%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/MiloanDirectOffer-pdl-UA-1606819678.png" alt="Miloan">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="972">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/TengoDirectOffer-pdl-UA-1607610306.png" alt="Tengo">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 10 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 94,3%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/TengoDirectOffer-pdl-UA-1607610306.png" alt="Tengo">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="1226">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/CreditplusDirectOffer-pdl-UA-1612862489.png" alt="Creditplus">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 10 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 99.14%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/CreditplusDirectOffer-pdl-UA-1612862489.png" alt="Creditplus">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="467">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/CPLDirect-pdl-UA-1606914283.png" alt="SGroshi">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 20 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 97%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/CPLDirect-pdl-UA-1606914283.png" alt="SGroshi">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="1204">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/MyCreditDirectOffer-pdl-UA-1606819691.png" alt="Mycredit">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 6 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 90%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/MyCreditDirectOffer-pdl-UA-1606819691.png" alt="Mycredit">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="1154">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/CreditDirectOfferNew-pdl-UA-1606819663.png" alt="Credit7">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 10 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 98.99%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/CreditDirectOfferNew-pdl-UA-1606819663.png" alt="Credit7">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="446">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/CreditKasaCPSPDLProfit-pdl-UA-1606819703.png" alt="CreditKasa">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 10 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 96.5%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/CreditKasaCPSPDLProfit-pdl-UA-1606819703.png" alt="CreditKasa">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="506">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/CCLoanDirectOffer-pdl-UA-1606819697.png" alt="Ccloan">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 15 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 93%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/CCLoanDirectOffer-pdl-UA-1606819697.png" alt="Ccloan">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="1059">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-6 col-12 card-grid">
+			<div class="card-offer">
+				<div class="card-offer__top logo-mob">
+					<div class="text-center">
+						<img class="img-credit" src="build/images/offers/CashberryDirect-pdl-UA-1613612691.png" alt="Cashberry">
+					</div>
+				</div>
+				<div class="card-offer__left">
+					<div class="advantage">
+						<div class="advantage__text"> Cума:</div>
+						<div class="advantage__value advantage__value-green"> до 10 000 ₴</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ставка:</div>
+						<div class="advantage__value advantage__value-green"> від 0,01%</div>
+					</div>
+					<hr class="hr-diver">
+					<div class="advantage">
+						<div class="advantage__text"> Ймовірність:</div>
+						<div class="advantage__value"> 96.5%</div>
+					</div>
+				</div>
+				<div class="card-offer__right">
+					<div class="text-center logo-pc">
+						<img class="img-credit" src="build/images/offers/CashberryDirect-pdl-UA-1613612691.png" alt="Cashberry">
+					</div>
+					<div class="text-center">
+						<a class="js-offer" data-offer="1105">
+							<button type="button" class="btn-t">Подати заявку</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<div class="title-block">
+		<h3 class="text-center">
+			<svg style="margin-right: 5px" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bounding-box" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd"
+						d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1H5v2H3v6h2v2h6v-2h2V5h-2V3zm1-2v3h3V1h-3zm3 11h-3v3h3v-3zM4 15v-3H1v3h3zM1 4h3V1H1v3z"/>
+			</svg>
+			Інформація про компанії:
+		</h3>
+	</div>
+	<div class="row font-block">
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «МІЛОАН»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="972">Miloan</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>+38(044)3338385</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>01135, м. Киев, вул. В. Чорновола, 12</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>612%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№2843</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>3000 грн. на 3 місяці, комісія 4860 грн., загальні витрати 7860 грн.</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 62 дня до 1 року</i>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «Милоан»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="1226">Tengo</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>+38(044)3338385</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>01135, м. Киев, вул. В. Чорновола, 12</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>612%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№176</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>3000 грн. на 3 місяці, комісія 4860 грн., загальні витрати 7860 грн.</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 62 дня до 1 року</i>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «АВЕНТУС УКРАІНА»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="467">Creditplus</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>0 800 753 363</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>03035 м.Київ, вул. Сурікова, 3-А</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>657%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№870</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>3000 грн. на 3 місяці, комісія 4860 грн., загальні витрати 7860 грн.</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 62 дня до 1 року</i>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «СПОЖИВЧИЙ ЦЕНТР»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="1204">SGroshi</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>+38(044)3338385</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>01032, м. Київ, вул. Саксаганського, 133-А</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>730%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№438</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>3000 грн. на 3 місяці, комісія 5040 грн., загальні витрати складають 8040 грн.</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 62 дня до 1 року</i>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «БЕЗПЕЧНЕ АГЕНТСТВО НЕОБХІДНИХ КРЕДИТІВ»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="1154">Mycredit</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>0 800 214 111</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>0401010, м. Київ, площа Арсенальна, 1-Б</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>406,02%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№993</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>1000 грн. на 3 місяці, комісія 1440 грн., загальні витрати 2440 грн.</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 64 дня до 1 року</i>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «ЛІНЕУРА УКРАІНАМ»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="446">Credit7</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>0(800)330733</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>02081, г. Киев, ул. Дніпровська Набережна, 25, п. 318</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>693.5%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№529</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>1000 грн. на 3 місяці, комісія 1710 грн., загальні витрати 2710 грн.</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 62 дня до 1 року</i>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «УКР КРЕДИТ ФІНАНС»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="506">CreditKasa</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>38(044)3335222</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>01133, м. Київ, бул. Лесі Українки, б. 26, оф. 407</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>730%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№993</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>4000 грн. на 3 місяці, комісія 5610 грн., загальні витрати на позику становлять 9610 грн</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 64 дня до 1 року</i>
+			</div>
+		</div>
+		<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 col-12 font-block__description">
+			<div>
+				<b>Назва компанії</b>: <i>ТОВ «CC ЛОУН»</i>
+			</div>
+			<div>
+				<b>Сайт</b>:
+				<i><a class="description-link js-offer" data-offer="1059">Ccloan</a></i>
+			</div>
+			<div>
+				<b>Підтримка</b>: <i>+38(044)2227733</i>
+			</div>
+			<div>
+				<b>Адрес</b>: <i>01021, м. Київ, вул. Кловський спуск, 7-А</i>
+			</div>
+			<div>
+				<b>Максимальна ГПС (APR)</b>: <i>478%</i>
+			</div>
+			<div>
+				<b>Генеральна ліцензія</b>: <i>№717</i>
+			</div>
+			<div>
+				<b>Приклад розрахунку</b>:
+				<i>10000 грн. на 3 місяці, комісія 11571 грн., загальні витрати на позику становлять 21571 грн.</i>
+			</div>
+			<div>
+				<b>Термін</b>: <i>від 62 дня до 1 року</i>
+			</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="title-block">
+		<h3 style="text-align: center">
+			<svg style="margin-right: 5px" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bounding-box" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<path fill-rule="evenodd"
+						d="M5 2V0H0v5h2v6H0v5h5v-2h6v2h5v-5h-2V5h2V0h-5v2H5zm6 1H5v2H3v6h2v2h6v-2h2V5h-2V3zm1-2v3h3V1h-3zm3 11h-3v3h3v-3zM4 15v-3H1v3h3zM1 4h3V1H1v3z"/>
+			</svg>
+			Загальні умови і вимоги до позичальника:
+		</h3>
+	</div>
+	<div class="row font-block">
+		<div class="col-12">
+			<hr>
+			<p>1. Вік від 18 років; Громадянство України; Будь-яка кредитна історія</p>
+			<hr>
+			<p>2. Термін погашення боргу (minimum and maximum period for repayment) становить від 61 до 365 днів;<br><br>Максимальна річна відсоткова ставка, що включає позичковий
+				відсоток, а також всі інші комісії і витрати за рік (maximum Annual Percentage Rate (APR), including interest rate plus fees and other costs for a year) становить
+				від 3 до 31%.<br><br>Річний відсоток за користування кредитом - від 1% до 31%.</p>
+			<hr>
+			<p>3. Якщо кредитор не сплачує кредитної організації суму кредиту і відсотки за користування кредитом в обумовлений термін, кредитна організація нараховує неустойку за
+				прострочення виплати по кредиту. Зазвичай, кредитні організації надають додатково 3 робочих дня, щоб кредитор зміг внести черговий платіж, або виплатити суму
+				кредиту повністю, на випадок непередбаченої затримки, пов'язаної з безготівковим переказом коштів. Якщо кредитна організація не отримує обумовлений у договорі
+				платіж в строк, вона зв'язується з кредитором і нагадує про наслідки, що настають при несплаті. Якщо тривалий час не вдається зв'язатися з кредитором і платежі по
+				кредиту не надходять, кредитна організація нарахує грошовий штраф, розмір якого зазвичай дорівнює 0,1% від суми кредиту, точний розмір штрафів за прострочення слід
+				уточнювати при підписанні договору на надання кредитних послуг.<br><br>Слід пам'ятати, що в разі недотримання термінів погашення кредиту, дані про борг можуть бути
+				передані до реєстру боржників і далі в колекторські організації. Настійно рекомендується вносити платежі вчасно, при виникненні непередбачуваних ситуація,
+				пов'язаних з внесенням платежів, негайно зв'язуватися з кредитною організацією, що надала кредит. Про терміни внесення платежів можна дізнатися під час підписання
+				договору на надання кредитних послуг в кожній конкретній організації. У разі погашення кредиту в строк (або раніше терміну, якщо це передбачено договором), Ви
+				формуєте собі позитивну кредитну історія, яка допоможе Вам в подальшому при отриманні кредитів на більші суми. Сайт не робить фінансових послуг і не стягує кошти за
+				надану інформацію</p>
+			<hr>
+			<p>4. Якщо ви взяли кредит на суму 1000 гривень на 90 днів з процентною ставкою 0,01% в день, то плата за користування засобами складе 0,01% в день, тобто 0,1 грн в
+				день. Виходить ви повертаєте суму відсотків рівну 9 грн, тобто 0.1 грн * 90 днів. А також суму кредиту рівну 1 000 грн. Таким чином, загальна сума повернення
+				складається з суми кредиту 1 000 і суми нарахованих відсотків за 90 дн. 9 грн і дорівнює 1090 грн. Мінімальний і максимальний період погашення боргу становить від
+				65 днів, до 365 днів. Максимальна річна відсоткова ставка, що включає позичковий відсоток, а також всі інші комісії і витрати за рік, або аналогічна ставка,
+				розрахована відповідно до місцевого законодавства становить 31% річних.</p>
+			<hr>
+		</div>
+	</div>
+</div>
+
+<!-- Back to top button -->
+<a id="toTop" class="gtm-toTop"></a>
+
+<script src="build/js/app.js"></script>
+
+<script>
+    function getParam(nameParam) {
+        let params = window.location.search.replace('?', '').split('&')
+            .reduce(function (p, e) {
+                let a = e.split('=');
+                p[decodeURIComponent(a[0])] = decodeURIComponent(a[1]);
+                return p;
+            }, {});
+
+        if (!!params[nameParam]) {
+            return params[nameParam]
+        }
+
+        return null
+    }
+
+    window.onload = function () {
+        $('.container-lend').on('click', '.js-offer', function (e) {
+            e.preventDefault()
+            let offer_id = $(this).data('offer')
+            let phone = getParam('phone')
+
+            let url = new URL('https://aiwebmanager.com/click.php')
+            url.searchParams.set('phone', phone)
+            url.searchParams.set('key', '9r0r86d4f5homzldq5sz')
+            url.searchParams.set('deliver_channel', 'facebook')
+            url.searchParams.set('offer', offer_id)
+
+            console.log(url.href)
+            window.open(url.href);
+        })
+    };
+</script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="19064c8f-f117-467e-b673-da434a60814f" name="priv-land" url="https://kredit.srr.pp.ua/">
+        <fileTransfer rootFolder="/var/www/kredit.srr.pp.ua" accessType="SFTP" host="104.248.247.245" port="22" sshConfigId="3444c68f-2d79-4760-a93b-5634cfebd7fe" sshConfig="vpn.de" keyPair="true">
+          <advancedOptions>
+            <advancedOptions controlEncoding="UTF-8" dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

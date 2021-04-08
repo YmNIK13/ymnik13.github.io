@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="UA">
+<head>
+	<title>Kredits Money</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta property="og:image" content="build/landings/img/privat-land/img_startLogoImg.png"/>
+
+
+	<link rel="manifest" href="/manifest.json">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="application-name" content="Kredit">
+	<meta name="apple-mobile-web-app-title" content="Kredit">
+
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+	<meta name="msapplication-TileColor" content="#73b027">
+	<meta name="msapplication-TileImage" content="/build/images/favicon/ms-icon-144x144.png">
+
+	<meta name="theme-color" content="#73b027">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="/build/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/build/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/build/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/build/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/build/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/build/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/build/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/build/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/build/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="/build/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/build/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/build/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/build/images/favicon/favicon-16x16.png">
+
+
+	<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/sw.js?v=1.1',{scope: './'})
+                    .then(function (registration) {
+                            // Registration was successful
+                            console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                        },
+                        function (err) {
+                            // registration failed :(
+                            console.log('ServiceWorker registration failed: ', err);
+                        }
+                    );
+            });
+        }
+	</script>
+
+
+
+
+	<link rel="stylesheet" href="build/css/app.css?v=1617701555">
+
+	<!--[if lt IE 9]>
+	<script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+<style>
+	.topheader .posterBlock {
+		background-image: url(build/images/land/img_posterImg.png);
+		background-color: #BEB5D2;
+		background-position: 15% 20%;
+	}
+
+	.body-tooltip {
+		position: absolute;
+		transform: translate3d(-113px, -59px, 0px);
+		top: 0;
+		left: 0;
+		will-change: transform;
+	}
+</style>
+
+<div class="container-fluid">
+	<div class="row topheader">
+
+		<div class="col-xl-6 posterBlock px-0 posterhAuth" role="img" aria-label="Успішний бізнес!"></div>
+
+		<div class="infoBlock col-xl-6 px-5p ">
+			<div class="py-3 py-sm-4"></div>
+
+			<div class='order-1 order-xl-2 ell info row py-3 py-md-4 py-xxl-5'>
+				<div class="col-12 col-md-10 col-lg-8 col-xl-10 col-xxl-7">
+					<div class="Header">Швидкий кредит!</div>
+					<h5 class="desctiption Normal text-left my-4">
+						Отримайте гроші на картку за 15 хвилин
+					</h5>
+
+					<div class="auth mt-3" style="position: relative;">
+						<form name="order" class="authForm" id="phoneForm" autocomplete="off">
+							<input type="hidden" name="form" value="phoneForm">
+
+							<div class="form-group mb-4 w-75" style="min-width: 290px;">
+								<label class="InputTitle" for="phone">Для отримання введіть номер телефону</label>
+								<div class="input-group text16">
+									<div id="shaker" style="width: inherit;">
+										<input type="tel" class="Input form-control mb-2 bg-transparent" id="phone"
+												name="order[phone]" required="required" value="">
+									</div>
+									<span class="error-inside" style="display: none;">
+                                            <i class="fa fa-exclamation-circle Input" tabindex="0" data-container=".error-inside" data-toggle="popover" data-trigger="focus"
+		                                            data-placement="top"></i>
+                                            <div class="popover fade bs-popover-top show body-tooltip" role="tooltip" x-placement="top">
+                                                <div class="arrow" style="left: 106px;"></div>
+                                                <div class="popover-body"></div>
+                                            </div>
+                                        </span>
+								</div>
+
+								<div class="Support form-check pl-0 pt-2">
+									<label class="form-check-label checkboxcontainer">
+										<input type="checkbox" class="form-check-input" id="progRules" name="progRules" checked="checked">
+										Я погоджуюсь з <a id="terms" href="#">умовами</a> і правилами
+										<span class="checkmark"></span>
+									</label>
+								</div>
+							</div>
+
+							<input type="hidden" id="order_country" name="order[country]" value="UA" />
+							<input type="hidden" id="order_source" name="order[source]" value="id2997" />
+							<input type="hidden" id="order_landing" name="order[landing]" value="privat-land" />
+							<input type="hidden" id="order_key" name="order[key]" value="9r0r86d4f5homzldq5sz" />
+							<input type="hidden" id="order_keyword" name="order[keyword]" />
+
+							<div><button type="submit" id="order_save" name="order[save]" class="Buttons btn btn-success py-2">Отримати гроші</button></div>
+						</form>
+
+					</div>
+					<!-- Modal -->
+					<div class="modal fade terms" tabindex="-1" role="dialog">
+						<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+							<div class="modal-content">
+								<div class="px-3 pt-3 pb-1 pb-lg-3" style="width: inherit; float: right">
+									<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										<span aria-hidden="true">&times;</span>
+									</button>
+								</div>
+
+								<div class="SmallHeader px-3 px-lg-5  pb-3 pb-lg-5 mt-n2" style="color: black">
+									Умови реєстрації в акціях
+								</div>
+
+								<div class="Normal px-3 px-lg-5 pb-3 pb-lg-5 mt-n2 text-left" style="color: black">
+									<ol style="padding: 0; margin-left: 20px;">
+										<li>Під час реєстрації в акції Клієнт дає свою згоду на опрацювання банком його
+											персональних даних без обмеження обсягу таких даних і термінів їх опрацювання банком.
+											Клієнт підтверджує своє повідомлення про права, пов'язані зі зберіганням та опрацюванням
+											своїх персональних даних, визначених чинним законодавством, осіб, яким передаються
+											персональні дані, мету збору даних, а саме:
+											<ul>
+												<li>забезпечення реалізації відносин у сфері надання банківських послуг і дотримання вимог чинного законодавства України;</li>
+												<li>проведення статистичних досліджень, результати яких можуть бути опубліковані будь-яким способом, а також передані третім особам без розкриття даних
+													щодо особи клієнта, і застосовані в інших комерційних цілях;
+												</li>
+												<li>досягнення інших цілей, позначених в правилах надання банківських послуг, розміщених на сайті www.privatbank.ua.</li>
+											</ul>
+										</li>
+										<li>Ця згода є безумовним, безвідкличним і не обмеженим терміном дії.</li>
+									</ol>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class='order-2 order-xl-3 ell counter row py-3 py-md-4 py-xxl-5 '>
+				<div class="pin Small col-12">
+					Видано <span class="pointer userTotalCounter InputTitle">87 016</span> кредитів
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Back to top button -->
+<a id="toTop" class="gtm-toTop"></a>
+
+
+<script src="build/js/app.js"></script>
+<script src="build/js/auth.js"></script>
+
+</body>
+</html>
