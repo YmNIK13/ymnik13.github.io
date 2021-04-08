@@ -21,6 +21,7 @@ toolbox.router.get('/*', toolbox.networkFirst, {
 });
 
 
+
 /*
 var updated = [//тут указываем скрипты которые не должны жестко кешироваться
     "https://soltyk.ru/broadcasts/1959750457-widget-3.js",
