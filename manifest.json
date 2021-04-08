@@ -56,7 +56,7 @@
 		},
 		{
 			"src": "/build/images/favicon/maskable_icon.png",
-			"sizes": "192x192",
+			"sizes": "214x214",
 			"type": "image\/png",
 			"purpose": "any maskable"
 		},
